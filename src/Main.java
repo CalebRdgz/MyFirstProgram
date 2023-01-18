@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import javax.swing.JOptionPane;
+import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 //        // 2 VARIABLES
@@ -32,6 +33,7 @@ public class Main {
 //        System.out.println("y: " + y);
 
 //        // 4 USER INPUT
+//        //import java.util.Scanner;
 //        Scanner scanner = new Scanner(System.in);
 //
 //        System.out.println("What is your name?");
@@ -58,6 +60,8 @@ public class Main {
 //        System.out.println(friends);
 
 //        // 6 GUI INTRO
+//        //import javax.swing.JOptionPane;
+
 //        String name = JOptionPane.showInputDialog("Enter your name");
 //        JOptionPane.showMessageDialog(null, "Hello " + name);
 //
@@ -84,22 +88,34 @@ public class Main {
 //        System.out.println(c);
 //        System.out.println(d);
 
-        // MATH CLASS PROJECT
-        double x;
-        double y;
-        double z;
+//        // MATH CLASS PROJECT
+//        double x;
+//        double y;
+//        double z;
+//
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Enter side x: ");
+//        x = scanner.nextDouble();
+//
+//        System.out.println("Enter side y: ");
+//        y = scanner.nextDouble();
+//
+//        z = Math.sqrt((x*x)+(y*y));
+//
+//        System.out.println("The hypotenuse is: " + z);
+//        scanner.close();
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter side x: ");
-        x = scanner.nextDouble();
+        // 8 RANDOM NUMBERS
+        //import java.util.Random;
+        Random random = new Random();
 
-        System.out.println("Enter side y: ");
-        y = scanner.nextDouble();
+        int x = random.nextInt(6)+1; //6 is the limit of the range of rand nums (0-5)
+        double y = random.nextDouble();
+        boolean z = random.nextBoolean();
 
-        z = Math.sqrt((x*x)+(y*y));
-
-        System.out.println("The hypotenuse is: " + z);
-        scanner.close();
+        System.out.println(x);
+        System.out.println(y);
+        System.out.println(z);
 
     }
 }
