@@ -57,15 +57,49 @@ public class Main {
 //        friends = (double) friends / 3;
 //        System.out.println(friends);
 
-        //GUI INTRO
-        String name = JOptionPane.showInputDialog("Enter your name");
-        JOptionPane.showMessageDialog(null, "Hello " + name);
+//        // 6 GUI INTRO
+//        String name = JOptionPane.showInputDialog("Enter your name");
+//        JOptionPane.showMessageDialog(null, "Hello " + name);
+//
+//        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
+//        JOptionPane.showMessageDialog(null, "You are " + age + " years old.");
+//
+//        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
+//        JOptionPane.showMessageDialog(null, "You are " + height + " cm. tall.");
 
-        int age = Integer.parseInt(JOptionPane.showInputDialog("Enter your age"));
-        JOptionPane.showMessageDialog(null, "You are " + age + " years old.");
+//        // 7 MATH CLASS
+//        double x = 3.14;
+//        double y = -10;
+//
+//        double z = Math.max(x, y);
+//        double a = Math.abs(y);
+//        double b = Math.sqrt(x);
+//        double c = Math.round(x);
+//        double d = Math.ceil(x);
+//
+//
+//        System.out.println(z);
+//        System.out.println(a);
+//        System.out.println(b);
+//        System.out.println(c);
+//        System.out.println(d);
 
-        double height = Double.parseDouble(JOptionPane.showInputDialog("Enter your height"));
-        JOptionPane.showMessageDialog(null, "You are " + height + " cm. tall.");
+        // MATH CLASS PROJECT
+        double x;
+        double y;
+        double z;
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter side x: ");
+        x = scanner.nextDouble();
+
+        System.out.println("Enter side y: ");
+        y = scanner.nextDouble();
+
+        z = Math.sqrt((x*x)+(y*y));
+
+        System.out.println("The hypotenuse is: " + z);
+        scanner.close();
 
     }
 }
